@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب سرعة التحميل</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- إضافة النص الخاص بحقوق الملكية -->
+<footer>
+    <p>&copy; 2024 Dev by Jamal</p>
+</footer>
+
+<div class="container">
+    <h2>حساب متوسط سرعة التحميل</h2>
+    
+    <label for="size">أدخل حجم التحميل (غيغا بايت):</label>
+    <input type="number" id="size" placeholder="حجم التحميل بالغيغا بايت" min="0">
+    
+    <label for="hours">أدخل الساعات المستغرقة:</label>
+    <input type="number" id="hours" placeholder="عدد الساعات" min="0">
+    
+    <label for="minutes">أدخل الدقائق المستغرقة:</label>
+    <input type="number" id="minutes" placeholder="عدد الدقائق" min="0">
+    
+    <button onclick="calculateSpeed()">احسب سرعة التحميل</button>
+    
+    <div id="result" class="result"></div>
+</div>
+
+<!-- نص الوسائط الاجتماعية أسفل الموقع -->
+<div class="social-text">
+    <p>
+        تويتر: <a href="https://x.com/jlml" target="_blank" class="social-link">@jlml</a> |
+        انستغرام: <a href="https://www.instagram.com/hirn" target="_blank" class="social-link">@hirn</a>
+    </p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* إعدادات عامة للجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: center;
+    background: linear-gradient(45deg, #183153, #4e87c5, #000000);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite; /* تطبيق الأنيميشين على الخلفية */
+    color: #74c0fc; /* لون النص */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; /* سيجعل الجسم يمتد لكامل ارتفاع الصفحة */
+}
+
+/* تأثير الأنيميشين */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4e87c5; /* خلفية بيضاء للعناصر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* حواف مستديرة */
+    text-align: right;
+}
+
+/* تنسيق العنوان */
+h2 {
+    color: #ffffff; /* لون العنوان */
+    margin-bottom: 20px;
+}
+
+/* تنسيق الحقول والأزرار */
+input, button {
+    width: 100%; /* عرض الحقل كامل */
+    max-width: 400px; /* تحديد أقصى عرض للحقول ليصبح متناسقًا */
+    padding: 12px;  /* تقليص الحشو ليكون متناسقًا مع التصميم */
+    margin: 10px 0;  /* زيادة المسافة بين الحقول */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+/* تنسيق الحقول النصية */
+input {
+    color: #333;
+}
+
+input:focus {
+    border-color: #4e87c5; /* تأثير التركيز على الحقول */
+    outline: none;
+    background-color: #fff;
+}
+
+/* تنسيق الزر */
+button {
+    background-color: #74c0fc; /* لون الزر */
+    color: #183153; /* لون النص داخل الزر */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 400px; /* تحديد أقصى عرض للزر ليكون متناسقًا */
+}
+
+button:hover {
+    background-color: #4e87c5; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق النتيجة */
+.result {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* تنسيق النص أسفل الموقع */
+.social-text {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.social-text a {
+    color: #4e87c5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-text a:hover {
+    color: #74c0fc;
+}
+
+/* تصميم الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    input, button {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .social-text {
+        font-size: 1em;
+    }
+}
